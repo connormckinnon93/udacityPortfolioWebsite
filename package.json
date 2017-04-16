@@ -1,0 +1,22 @@
+{
+  "name": "udacity-portfolio-website",
+  "version": "1.0.0",
+  "description": "Repository for Project 2 Udacity Full Stack Web Developer Nano Degree",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connormckinnon93/udacityPortfolioWebsite.git"
+  },
+  "author": "Connor McKinnon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/connormckinnon93/udacityPortfolioWebsite/issues"
+  },
+  "homepage": "https://github.com/connormckinnon93/udacityPortfolioWebsite#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
