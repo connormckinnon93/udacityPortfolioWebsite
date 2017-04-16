@@ -6,6 +6,8 @@ var eslint = require('gulp-eslint');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 gulp.task('default', ['copy-html', 'copy-images', 'scripts', 'serve'], function() {
 });
@@ -32,6 +34,10 @@ gulp.task('copy-html', function() {
 
 gulp.task('copy-images', function() {
 	gulp.src('img/*')
+		.pipe(imagemin({
+			progressive: true,
+			use: [pngquant()]
+		}))
 	    .pipe(gulp.dest('dist/img'));
 });
 
