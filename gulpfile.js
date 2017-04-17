@@ -68,6 +68,7 @@ gulp.task('styles', function() {
 	gulp.src('sass/**/*.scss')
 		.pipe(sourcemaps.init())
 	    .pipe(sass({
+	    	// uncomment for minified output
 	    	// outputStyle: 'compressed'	
 	    }).on('error', sass.logError))
 	    .pipe(autoprefixer({
