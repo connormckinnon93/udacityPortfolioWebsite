@@ -1,0 +1,97 @@
+/* Variables */
+$font-primary: 'Lato', sans-serif;
+$brand-primary: #02b3e4;
+$brand-dark: #2d3c49;
+$brand-light: #7d97ad;
+$fontweight-light: 100;
+$fontweight-heavy: 500;
+
+/* Font Family, Size, Color */
+h1, h2, h3, h4, p {
+	font-family: $font-primary;
+
+}
+
+h1 {
+	font-weight: 100;
+	color: $brand-dark;
+}
+
+h2, h3, h4 {
+	font-weight: 500;
+}
+
+h3, h4, p, p > a {
+	color: $brand-dark;
+}
+
+h2 {
+	color: $brand-light;
+}
+
+p > a:hover {
+	text-decoration: none;
+	color: $brand-primary;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+.subheading {
+	margin-top: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid $brand-primary;
+}
+
+@media screen and (max-width: 991px) {
+	.subheading {
+		margin-top: 30px;
+	}
+}
+
+/* Brand Row */
+.img-brand {
+	padding-top: 20px;
+	max-height: 90px;
+	max-width: 90px;
+}
+
+.separator {
+	border-top: 2px solid $brand-primary;
+}
+
+/* Featured Work Row */
+.img-feature {
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+	display: block;
+}
+
+.app-link {
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 991px) {
+	.title-feature {
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+	.app-link {
+		margin-bottom: 30px;
+	}
+}
+
+/* Copyright Notice Row */
+.copy-notice {
+	background-color: $brand-light;
+	margin-top: 20px;
+}
+
+.copy-notice > p {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 0;
+}

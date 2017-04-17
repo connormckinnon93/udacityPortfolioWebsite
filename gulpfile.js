@@ -68,7 +68,7 @@ gulp.task('styles', function() {
 	gulp.src('sass/**/*.scss')
 		.pipe(sourcemaps.init())
 	    .pipe(sass({
-	    	outputStyle: 'compressed'	
+	    	// outputStyle: 'compressed'	
 	    }).on('error', sass.logError))
 	    .pipe(autoprefixer({
 	    	browsers: ['last 2 versions']
