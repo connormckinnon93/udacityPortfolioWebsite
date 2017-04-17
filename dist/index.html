@@ -15,6 +15,22 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+    	<!-- Begin Modal -->
+		<div class="modal fade" id="demoModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+						<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Demo Modal</h4>
+					</div>
+					<div class="modal-body">
+						<p>This modal is just to practice using the built in JavaScript functionality of the Bootstrap Framework</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Modal -->
+
     	<!-- Begin Container -->
     	<div class="container">
     		<!-- Begin Header Section -->
@@ -44,12 +60,12 @@
     		<!-- Begin About Row -->
     		<div class="row">
     			<div class="col-md-8">
-    				<img src="img/header_code.jpg" alt="" class="img-responsive">
+    				<img src="img/header_code_1x.jpg" alt="Source Code for a PHP Site" class="img-responsive" srcset="img/header_code_1x.jpg 1x, img/header_code_2x.jpg 2x">
     			</div>
     			<div class="col-md-4">
     				<h2 class="subheading">Introduction</h2>
-    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consectetur doloribus fugiat ab aliquam dicta natus vel nulla, illum ducimus neque, earum? Deleniti, blanditiis? Sunt, iure aperiam doloribus perferendis dolore!</p>
-    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consectetur doloribus fugiat ab aliquam dicta natus vel nulla, illum ducimus neque, earum? Deleniti, blanditiis? Sunt, iure aperiam doloribus perferendis dolore!</p>
+    				<p>Hi! Welcome to my portfolio page. This is based off the content for Project 2 of the Udacity Fullstack Web Development Nanodegree. It was constructed using the Bootstrap and jQuery frameworks.</p>
+    				<p>You can view the whole project on GitHub at <a href="https://github.com/connormckinnon93/udacityPortfolioWebsite">Udacity Portfolio Website</a>. It also uses component from the Web Tooling and Automation Course on Udacity.</p>
     			</div>
     		</div>
     		<!-- End About Row -->
@@ -59,17 +75,20 @@
     				<h2 class="title-feature">Featured Work</h2>
     			</div>
     			<article class="col-md-4 text-center">
-    				<img src="img/appify_1x.jpg" alt="" class="img-feature">
+    				<img src="img/appify_1x.jpg" alt="Apple Macbook Pro" class="img-feature" srcset="img/appify_1x.jpg 1x, img/appify_2x.jpg 2x"
+    				 data-toggle="modal" data-target="#demoModal">
     				<h3 class="text-uppercase">Appify</h3>
     				<p class="app-link"><a href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a></p>
     			</article>
     			<article class="col-md-4 text-center">
-    				<img src="img/sunflower_1x.jpg" alt="" class="img-feature">
+    				<img src="img/sunflower_1x.jpg" alt="Apple iPhone 6" class="img-feature" srcset="img/sunflower_1x.jpg 1x, img/sunflower_2x.jpg 2x"
+    				 data-toggle="modal" data-target="#demoModal">
     				<h3 class="text-uppercase">Sunflower</h3>
     				<p class="app-link"><a href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a></p>
     			</article>
     			<article class="col-md-4 text-center">
-    				<img src="img/bokeh_1x.jpg" alt="" class="img-feature">
+    				<img src="img/bokeh_1x.jpg" alt="Apple iPad Air" class="img-feature" srcset="img/bokeh_1x.jpg 1x, img/bokeh_2x.jpg 2x"
+    				 data-toggle="modal" data-target="#demoModal">
     				<h3 class="text-uppercase">Bokeh</h3>
     				<p class="app-link"><a href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a></p>
     			</article>
